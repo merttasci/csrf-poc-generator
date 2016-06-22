@@ -7,4 +7,4 @@ This create a CSRF PoC form to any HTTP request.
 # To-Do 
 - HTTP or HTTPS radio button.
 - Auto submit form.
-- Other HTTP data types. (json, xml, when file upload)
+- Other HTTP data types. (json, xml, multipart form data)
