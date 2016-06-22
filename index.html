@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+  		<!-- https://github.com/merttasci -->
+	    <meta charset="utf-8">
+	    <title>CSRF Simple PoC Generator</title>
+	    <link href='https://fonts.googleapis.com/css?family=Titillium+Web&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	    <link href="css/bootstrap.min.css" rel="stylesheet">
+	    <link href="css/style.css" rel="stylesheet">
+	    <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+	    <script src="js/bootstrap.min.js"></script>
+	    <script type="text/javascript" src="js/FileSaver.min.js"></script>
+	    <script type="text/javascript" src="js/clipboard.min.js"></script>
+  	</head>
+  	<body>
+	  	<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="page-header">
+						<h1>
+							CSRF PoC Generator <small>to save your time..</small>
+						</h1>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">
+								<span class="glyphicon glyphicon-registration-mark" aria-hidden="true"></span> REQUEST
+							</h3>
+						</div>
+						<div class="panel-body" style="padding:0">
+							<textarea style="border:none; background-color: white; padding:10px; width:100%; height:400px" placeholder="Paste the request." id="request"></textarea>
+						</div>
+						<div class="panel-footer">
+							<button type="button" class="btn btn-success" id="generate">Generate PoC Form</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">
+								<span class="glyphicon glyphicon-align-left" aria-hidden="true"></span> CSRF PoC FORM
+							</h3>
+						</div>
+						<div class="panel-body" style="padding:0">
+							<textarea style="border:none; background-color: white; padding:10px; width:100%; height:400px" placeholder="PoC will be here." id="poc"></textarea>
+						</div>
+						<div class="panel-footer">
+							<button type="button" class="btn btn-success" id="copy" data-clipboard-target="#poc">Copy It</button>
+							<button type="button" class="btn btn-success" id="save">Save as HTML</button>
+						</div>
+					</div>
+					<script type="text/javascript">
+						var clipboard = new Clipboard('#copy');
+					</script>
+				</div>
+			</div>
+		</div>
+	    <script src="js/generate.js"></script>
+  	</body>
+</html>

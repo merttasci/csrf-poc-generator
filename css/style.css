@@ -1,0 +1,8 @@
+* {
+	font-family: 'Titillium Web', sans-serif;
+}
+
+body {
+	background-image: url("../imgs/bg.png");
+	/* cc: https://www.digitalocean.com/community/projects */
+}
