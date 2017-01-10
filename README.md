@@ -1,6 +1,6 @@
 # CSRF PoC Generator
 
-This create a CSRF PoC form to any HTTP request.
+This HTML file creates a CSRF PoC form to any HTTP request.
 
 <img src="http://g.recordit.co/aOgxzF9toA.gif"/>
 
