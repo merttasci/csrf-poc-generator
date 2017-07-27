@@ -17,7 +17,13 @@ $("#generate").click(function() {
 		else {
 			var headerKey = headers[i].split(":")[0];
 			if(headerKey == "Host") {
-				requirements.host = "http://" + headers[i].split(": ")[1];
+					if($('#httpradio')[0].checked) { 
+						requirements.host = "http://" + headers[i].split(": ")[1];
+					}
+					else{
+						requirements.host = "https://" + headers[i].split(": ")[1];
+					}
+
 			}
 		}
 	}
