@@ -62,7 +62,7 @@ function generateForm(requirements, parameters, parametersKey, parametersValue) 
 	form += "\t\t\t<input type=\"submit\" value=\"Submit\">\n";
 	form += "\t\t</form>\n";
 	form += "\t</body>\n";
-	form += "<html>\n";
+	form += "</html>\n";
 	
 	return form;
 }
